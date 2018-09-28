@@ -7,7 +7,6 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "network": "HOST",
       "image": "hackathonhpe/servicemix:5.6.3"
     },
     "portMappings": [
