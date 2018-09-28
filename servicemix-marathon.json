@@ -1,0 +1,28 @@
+{
+  "id": "servicemix-5.6.3",
+  "cpus": 0.5,
+  "mem": 1024.0,
+  "instances": 1,
+  "networks": [ { "mode": "container/bridge" } ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "network": "HOST",
+      "image": "hackathonhpe/servicemix:5.6.3"
+    },
+    "portMappings": [
+      { "containerPort": 1099, "hostPort": 0, "protocol": "tcp" },
+      { "containerPort": 8101, "hostPort": 0, "protocol": "tcp" },
+      { "containerPort": 8181, "hostPort": 0, "protocol": "tcp" },
+      { "containerPort": 61616, "hostPort": 0, "protocol": "tcp" },
+      { "containerPort": 444444, "hostPort": 0, "protocol": "tcp" }
+    ],
+    "volumes": [
+      {
+        "containerPath": "/deploy",
+        "hostPath": "/var/data/servicemix/deploy",
+        "mode": "RW"
+      }
+    ]
+  }
+}
