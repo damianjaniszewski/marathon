@@ -11,11 +11,11 @@
       "image": "hackathonhpe/servicemix:5.6.3"
     },
     "portMappings": [
-      { "containerPort": 1099, "hostPort": 0, "protocol": "tcp" },
-      { "containerPort": 8101, "hostPort": 0, "protocol": "tcp" },
-      { "containerPort": 8181, "hostPort": 0, "protocol": "tcp" },
-      { "containerPort": 61616, "hostPort": 0, "protocol": "tcp" },
-      { "containerPort": 444444, "hostPort": 0, "protocol": "tcp" }
+      { "port": 1099, "hostPort": 0, "protocol": "tcp" },
+      { "port": 8101, "hostPort": 0, "protocol": "tcp" },
+      { "port": 8181, "hostPort": 0, "protocol": "tcp" },
+      { "port": 61616, "hostPort": 0, "protocol": "tcp" },
+      { "port": 444444, "hostPort": 0, "protocol": "tcp" }
     ],
     "volumes": [
       {
